@@ -2,13 +2,13 @@ const express = require("express");
 const webpush = require("web-push");
 const bodyParser = require("body-parser");
 const path = require("path");
-
+const cors = require('cors');
 const app = express();
 
 // Set static path
 app.use(express.static(path.join(__dirname, "client")));
-
 app.use(bodyParser.json());
+app.use(cors());
 
 const publicVapidKey = "BJNusOdj_XVN3P31Yv7DKcsoXBva5brqytdV1AJWVBsdmMT0IsVfjNadO2VIRYxzHLeMzWxHodwXkhRopDOfKLE";
 const privateVapidKey = "oAKHso3XFORcib77oRWIa3FMU9INB26sB0sqklxWrMc";
