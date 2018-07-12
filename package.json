@@ -1,0 +1,31 @@
+{
+  "name": "web-push-notify",
+  "version": "1.0.0",
+  "description": "Push notification using web push",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sokhasen/Node-Web-Push-Notify.git"
+  },
+  "keywords": [
+    "Web-Push",
+    "Service-worker",
+    "nodejs"
+  ],
+  "author": "Sen Sokha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sokhasen/Node-Web-Push-Notify/issues"
+  },
+  "homepage": "https://github.com/sokhasen/Node-Web-Push-Notify#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "nodemon": "^1.18.1",
+    "web-push": "^3.3.2"
+  }
+}
